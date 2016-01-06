@@ -5,7 +5,6 @@ import base64
 import wayround_org.sasl.mechs.plain
 
 
-
 MECHANISMS = {
     'PLAIN': {
         'server': wayround_org.sasl.mechs.plain.Server,
@@ -30,6 +29,10 @@ class SASLSession:
         text = base64.b64encode(data)
 
         return code, text
+
+    @property
+    def properties(self):
+        return self.mech_obj.properties
 
 
 def init_mech(mech_name, mode, callback=None):
