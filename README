@@ -59,11 +59,12 @@ This SASL mechanism architecture shold be simple
 		   this methods (and particularly this package
 		   mechanisms) is, in case of errors, return strings
 		   starting with 'error' text and continuing with
-		   '_some_spec' to indicate specific error this
-		   package
+		   '_some_spec' to indicate specific error.
 
       2. text - data wich should be sent to server or client
-                counterpart
+                counterpart. (In case of error, usually no any data
+		should be sent farther, but read documentation
+		on specifics of mechanism being used)
 
    NOTE: step64() is simply a wrap for step() method. step64() decodes
          it's input, passes decoding result to step(), after what
