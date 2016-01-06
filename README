@@ -25,7 +25,7 @@ Usage
 
 This SASL mechanism architecture shold be simple
 
-1. import wayround_org.sasl
+1. import wayround_org.sasl.sasl
 
 2. use init_mech(mech_name, mode, callback=None) function
    to create SASLSession instance.
