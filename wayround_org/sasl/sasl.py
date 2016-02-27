@@ -34,6 +34,9 @@ class SASLSession:
     def properties(self):
         return self.mech_obj.properties
 
+    def __getitem__(self, obj):
+        return self.mech_obj.properties[obj]
+
 
 def init_mech(mech_name, mode, callback=None):
 
