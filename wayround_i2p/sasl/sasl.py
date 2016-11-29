@@ -2,13 +2,13 @@
 
 import base64
 
-import wayround_org.sasl.mechs.plain
+import wayround_i2p.sasl.mechs.plain
 
 
 MECHANISMS = {
     'PLAIN': {
-        'server': wayround_org.sasl.mechs.plain.Server,
-        'client': wayround_org.sasl.mechs.plain.Client,
+        'server': wayround_i2p.sasl.mechs.plain.Server,
+        'client': wayround_i2p.sasl.mechs.plain.Client,
         }
     }
 
